@@ -11,3 +11,15 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
+
+jwt:
+  secret: warehouse-super-secret-key
+  expiration: 86400000
+
+logging:
+  file:
+    name: C:/Users/66945/Desktop/Sprig Boot/logs/warehouse-project/app.log
+  pattern:
+    file: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+  level:
+    com.warehouse: DEBUG
